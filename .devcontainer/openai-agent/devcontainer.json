@@ -4,6 +4,9 @@
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/openai-agent-example",
     "features": {},
     "postCreateCommand": "python -m ensurepip --upgrade && python -m pip install --upgrade pip setuptools && pip install -r requirements.txt",
+    "postAttachCommand": {
+       "Start server": "python app_agent.py"
+    },
     "customizations": {
       "vscode": {
         "settings": {
@@ -17,7 +20,6 @@
     },
     "forwardPorts": [],
     "portsAttributes": {},
-    "onCreateCommand": "python app_agent.py",
     "secrets": {
       "PAYPAL_CLIENT_ID": {
         "description": "Sandbox client ID of the application.",
