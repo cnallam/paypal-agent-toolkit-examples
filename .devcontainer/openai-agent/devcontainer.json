@@ -1,0 +1,44 @@
+{
+    "name": "OpenAI Agent App",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/openai-agent-example",
+    "features": {},
+    "postCreateCommand": "pip install -r requirements.txt",
+    "runArgs": [
+      "--env-file",
+      ".devcontainer/devcontainer.env"
+    ],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "python.defaultInterpreterPath": "/usr/local/bin/python"
+        },
+        "extensions": [
+          "ms-python.python",
+          "ms-python.vscode-pylance"
+        ]
+      }
+    },
+    "forwardPorts": [],
+    "portsAttributes": {},
+    "onCreateCommand": "python app.py",
+    "secrets": {
+      "PAYPAL_CLIENT_ID": {
+        "description": "Sandbox client ID of the application.",
+        "documentationUrl": "https://developer.paypal.com/dashboard/applications/sandbox"
+      },
+      "PAYPAL_CLIENT_SECRET": {
+        "description": "Sandbox secret of the application.",
+        "documentationUrl": "https://developer.paypal.com/dashboard/applications/sandbox"
+      },
+      "OPENAI_API_KEY": {
+        "description": "API Key for OpenAI API access.",
+        "documentationUrl": "https://platform.openai.com/account/api-keys"
+      },
+      "OPENAI_API_VERSION": {
+        "description": "Version of the OpenAI API being used.",
+        "documentationUrl": "https://platform.openai.com/docs"
+      }
+    }
+  }
+  
