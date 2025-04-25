@@ -17,7 +17,7 @@
     },
     "forwardPorts": [],
     "portsAttributes": {},
-    "onCreateCommand": "python app.py",
+    "onCreateCommand": "python app_agent.py",
     "secrets": {
       "PAYPAL_CLIENT_ID": {
         "description": "Sandbox client ID of the application.",
