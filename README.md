@@ -12,8 +12,8 @@ This repository contains two Python-based applications ready to run in GitHub Co
 
 | Project | Launch |
 | :------ | :----- |
-| **OpenAI Agent App** | [![Open in Codespaces](https://github.com/codespaces/new?hide_repo_select=true&repo=972769025&skip_quickstart=true&ref=main&devcontainer_path=.devcontainer%2Fopenai-agent%2Fdevcontainer.json) |
-| **OpenAI Assistant Chat Bot** | [![Open in Codespaces](https://github.com/codespaces/new?hide_repo_select=true&repo=972769025&skip_quickstart=true&ref=main&devcontainer_path=.devcontainer%2Fopenai-assistant-chatbot%2Fdevcontainer.json) |
+| **OpenAI Agent App** | [![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&repo=972769025&skip_quickstart=true&ref=main&devcontainer_path=.devcontainer%2Fopenai-agent%2Fdevcontainer.json) |
+| **OpenAI Assistant Chat Bot** | [![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&repo=972769025&skip_quickstart=true&ref=main&devcontainer_path=.devcontainer%2Fopenai-assistant-chatbot%2Fdevcontainer.json) |
 
 > Ensure you have **GitHub Codespaces** enabled for your account.
 

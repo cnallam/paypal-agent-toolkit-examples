@@ -4,10 +4,6 @@
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/openai-agent-example",
     "features": {},
     "postCreateCommand": "pip install -r requirements.txt",
-    "runArgs": [
-      "--env-file",
-      ".devcontainer/devcontainer.env"
-    ],
     "customizations": {
       "vscode": {
         "settings": {
@@ -34,10 +30,6 @@
       "OPENAI_API_KEY": {
         "description": "API Key for OpenAI API access.",
         "documentationUrl": "https://platform.openai.com/account/api-keys"
-      },
-      "OPENAI_API_VERSION": {
-        "description": "Version of the OpenAI API being used.",
-        "documentationUrl": "https://platform.openai.com/docs"
       }
     }
   }

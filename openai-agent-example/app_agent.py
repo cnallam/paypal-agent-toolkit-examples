@@ -81,7 +81,7 @@ agent = Agent(
     instructions="""
     You assist users in creating and managing payments, disputes, subscriptions, shipments, and more. Based on the HATEOAS links in the response, you provide next steps, actionable recommendations, and suggest appropriate prompts to guide them effectively.
     """,
-    model="gpt-4-1106-preview",
+    model="gpt-4o",
     tools=tools
 )
 

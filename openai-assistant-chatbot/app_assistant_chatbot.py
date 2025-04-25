@@ -22,12 +22,49 @@ configuration = Configuration(
     actions={
         "orders": {
             "create": True,
-            "get": True,
             "capture": True,
-        }
+            "get": True
+        },
+        "products": {
+            "create": True,
+            "list": True,
+            "show": True
+        },
+        "subscriptionPlans": {
+            "create": True,
+            "list": True,
+            "show": True
+        },
+        "subscriptions": {
+            "create": True,
+            "show": True,
+            "cancel": True
+        },
+        "invoices": {
+            "create": True,
+            "get": True,
+            "list": True,
+            "send": True,
+            "sendReminder": True,
+            "cancel": True,
+            "generateQRC": True,
+        },
+        "shipment": {
+            "create": True,
+            "get": True,
+            "list": True
+        },
+        "disputes": {
+            "create": True,
+            "get": True,
+            "list": True
+        },
+        "transactions": {
+            "list": True
+        },
     },
     context=Context(
-        sandbox=True
+        sandbox=True,
     )
 )
 
@@ -48,7 +85,7 @@ You assist users in creating and managing payments, disputes, subscriptions, shi
  Based on the HATEOAS links in the response, you provide next steps, actionable recommendations, 
  and suggest appropriate prompts to guide them effectively.
 """,
-    model="gpt-4-1106-preview",
+    model="gpt-4o",
     tools=tools
 )
 
