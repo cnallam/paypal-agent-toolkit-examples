@@ -3,7 +3,7 @@
     "image": "mcr.microsoft.com/devcontainers/python:3.11",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/openai-agent-example",
     "features": {},
-    "postCreateCommand": "pip install -r requirements.txt",
+    "postCreateCommand": "python -m ensurepip --upgrade && python -m pip install --upgrade pip setuptools && pip install -r requirements.txt",
     "customizations": {
       "vscode": {
         "settings": {
