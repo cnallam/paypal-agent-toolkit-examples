@@ -3,7 +3,10 @@
     "image": "mcr.microsoft.com/devcontainers/python:3.11",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/openai-assistant-chatbot",
     "features": {},
-    "postCreateCommand": "pip install -r requirements.txt",
+    "postCreateCommand": "python -m ensurepip --upgrade && python -m pip install --upgrade pip setuptools && pip install -r requirements.txt",
+    "postAttachCommand": {
+       "Start server": "python app_agent.py"
+    },
     "customizations": {
       "vscode": {
         "settings": {
