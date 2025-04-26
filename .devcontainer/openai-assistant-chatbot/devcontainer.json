@@ -5,7 +5,7 @@
     "features": {},
     "postCreateCommand": "python -m ensurepip --upgrade && python -m pip install --upgrade pip setuptools && pip install -r requirements.txt",
     "postAttachCommand": {
-       "Start server": "python app_agent.py"
+       "Start server": "python app_assistant_chatbot.py"
     },
     "customizations": {
       "vscode": {
